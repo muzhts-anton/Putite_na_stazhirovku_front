@@ -7,9 +7,9 @@ import { root } from '../main.js';
 export function mainPage() {
     root.innerHTML = '';
 
-      Ajax.getFetch({
+      Ajax.postFetch({
         url: `https://putitenastazhirovkuback.herokuapp.com/api/v1/mainpage`,
-        body: {sum: 7600}
+        body: {sum: "7600"},
       }).then((response) => {
         if (response && response.status === OK) {
           console.log("ok");
