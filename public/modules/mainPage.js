@@ -1,4 +1,5 @@
 import { root } from '../main.js';
+import {}
 
 /**
  * @description Создаёт и отрисовывает страницу главную страницу.
