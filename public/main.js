@@ -1,4 +1,4 @@
-//import {mainPage} from './modules/mainPage.js';
+import {mainPage} from './modules/mainPage.js';
 
 export const root = document.getElementById('root');
 
@@ -9,9 +9,7 @@ const configApp = {
   },
 };
 
-console.log("lolkek");
-
-//mainPage();
+mainPage();
 
 root.addEventListener('click', (e) => {
   const {target} = e;

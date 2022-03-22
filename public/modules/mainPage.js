@@ -7,16 +7,17 @@ import { root } from '../main.js';
 export function mainPage() {
     root.innerHTML = '';
 
-    //   Ajax.getFetch({
-    //     url: `${URL}/api/v1/mainpage`,
-    //   }).then((response) => {
-    //     if (response && response.status === OK) {
-    //       // TODO
-    //       return;
-    //     } else {
-    //       // TODO
-    //     }
-    //   });
+      Ajax.getFetch({
+        url: `https://putitenastazhirovkuback.herokuapp.com/api/v1/mainpage`,
+        body: {sum: 7600}
+      }).then((response) => {
+        if (response && response.status === OK) {
+          console.log("ok");
+          return;
+        } else {
+          console.log("nah");
+        }
+      });
 
     displayInput();
 
